@@ -1,0 +1,743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name=Generator content="FastReport 4.0 http://www.fast-report.com">
+
+<title>WVSAffectedItemsReport</title>
+<style type="text/css"><!-- 
+.page_break {page-break-before: always;}
+.s0 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ text-align: Left; vertical-align: Top;
+}
+.s1 {
+ font-family: Arial;
+ font-size: 24px;
+ color: #FFFFFF; font-weight: bold; font-style: normal;
+ background-color: #1E7BC1;
+ text-align: Right; vertical-align: Middle;
+}
+.s2 {
+ font-family: Arial;
+ font-size: 35px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Center; vertical-align: Top;
+}
+.s3 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ text-align: Right; vertical-align: Top;
+}
+.s4 {
+ font-family: Arial;
+ font-size: 21px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ border-color:#C0C0C0; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 0px;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s5 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #FFFFFF; font-weight: bold; font-style: normal;
+ background-color: #808080;
+ border-color:#808080; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s6 {
+ font-family: Arial;
+ font-size: 16px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ border-color:#C0C0C0; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 0px;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s7 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s8 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s9 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s10 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s11 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #FFFFFF; font-weight: bold; font-style: normal;
+ background-color: #808080;
+ border-color:#808080; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s12 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 0px;
+ text-align: Left; vertical-align: Middle;
+}
+.s13 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ border-color:#C0C0C0; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 0px;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s14 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #2C65C8; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s15 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s16 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #FF0000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s17 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #F18900; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s18 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #2C65C8; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s19 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #2D952D; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s20 {
+ font-family: Arial;
+ font-size: 1px;
+ color: #000000; font-style: normal;
+ background-color: #DC3016;
+ border-color:#DC3016; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s21 {
+ font-family: Arial;
+ font-size: 1px;
+ color: #000000; font-style: normal;
+ background-color: #F18900;
+ border-color:#F18900; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s22 {
+ font-family: Arial;
+ font-size: 1px;
+ color: #000000; font-style: normal;
+ background-color: #2C65C8;
+ border-color:#2C65C8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s23 {
+ font-family: Arial;
+ font-size: 1px;
+ color: #000000; font-style: normal;
+ background-color: #2D952D;
+ border-color:#2D952D; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s24 {
+ font-family: Courier New;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ text-align: Right; vertical-align: Top;
+}
+.s25 {
+ font-family: Courier New;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Right; vertical-align: Top;
+}
+.s26 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s27 {
+ font-family: Arial;
+ font-size: 21px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: transparent;
+ border-color:#C0C0C0; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 0px;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s28 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #FFFFFF; font-weight: bold; font-style: normal;
+ background-color: #808080;
+ border-color:#808080; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s29 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s30 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s31 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s32 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s33 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s34 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s35 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s36 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ text-align: Left; vertical-align: Top;
+}
+.s37 {
+ font-family: Courier New;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s38 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s39 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s40 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s41 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Middle;
+}
+.s42 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #FFFFFF;
+ border-color:#E4E4E4; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 0px;
+ text-align: Left; vertical-align: Middle;
+}
+.s43 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-weight: bold; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s44 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s45 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 1;
+ border-top-width: 1;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s46 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: transparent;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 0px;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+.s47 {
+ font-family: Arial;
+ font-size: 13px;
+ color: #000000; font-style: normal;
+ background-color: #E4E4E4;
+ border-color:#D8D8D8; border-style: solid;
+ border-left-width: 1;
+ border-right-width: 1;
+ border-top-width: 0px;
+ border-bottom-width: 1;
+ text-align: Left; vertical-align: Top;
+}
+--></style>
+</head>
+<body
+ bgcolor="#FFFFFF" text="#000000">
+
+<a name="PageN1"></a>
+<table width="720" border="0" cellspacing="0" cellpadding="0">
+<tr style="height: 1px"><td width="4"/><td width="11"/><td width="16"/><td width="7"/><td width="87"/><td width="8"/><td width="19"/><td width="21"/><td width="25"/><td width="11"/><td width="156"/><td width="22"/><td width="72"/><td width="185"/><td width="76"/><td width="2"/></tr>
+<tr style="height:18px">
+<td colspan="7" rowspan="2" class="s0" style="font-size:1px"><img src="report.files/img0.png" width="152" height="26" alt=""></td><td/><td/><td/><td/><td/><td colspan="3" class="s0" style="font-size:1px"><img src="report.files/img1.png" width="333" height="20" alt=""></td><td/>
+</tr>
+<tr style="height:6px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:315px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:175px">
+<td colspan="11" class="s0" style="font-size:1px"><img src="report.files/img2.png" width="365" height="181" alt=""></td><td colspan="5" class="s1">Acunetix Website Audit<br><br>8 May, 2018</td>
+</tr>
+<tr style="height:114px">
+<td colspan="15" class="s2">Affected Items</td><td/>
+</tr>
+<tr style="height:370px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:19px">
+<td colspan="15" class="s3" style="font-size:1px">&nbsp;</td><td/>
+</tr>
+</table>
+<a name="PageN2"></a>
+<table width="720" border="0" cellspacing="0" cellpadding="0" class="page_break">
+<tr style="height: 1px"><td width="4"/><td width="11"/><td width="16"/><td width="7"/><td width="87"/><td width="8"/><td width="19"/><td width="21"/><td width="25"/><td width="11"/><td width="156"/><td width="22"/><td width="72"/><td width="185"/><td width="76"/><td width="2"/></tr>
+<tr style="height:37px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:33px">
+<td colspan="15" class="s4">Scan of http://XXXXSSSSS.com:80</td><td/>
+</tr>
+<tr style="height:15px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:22px">
+<td colspan="15" class="s6">Scan details</td><td/>
+</tr>
+<tr style="height:18px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="15" class="s5">Scan information</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" class="s7">Start time</td><td colspan="9" class="s8">2018/5/8 18:46:16</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" class="s38">Finish time</td><td colspan="9" class="s39">2018/5/8 18:50:11</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" class="s38">Scan time</td><td colspan="9" class="s40">3 minutes, 55 seconds</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" class="s38">Profile</td><td colspan="9" class="s41">Default</td><td/>
+</tr>
+<tr style="height:18px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="15" class="s11">Server information</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" class="s7">Responsive</td><td colspan="9" class="s8">True</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" rowspan="2" class="s38">Server banner</td><td colspan="9" class="s42">nginx/1.2.6</td><td/>
+</tr>
+<tr style="height:1px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="6" class="s38">Server OS</td><td colspan="9" class="s8">Unknown</td><td/>
+</tr>
+<tr style="height:26px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="15" class="s13">Threat level</td><td/>
+</tr>
+<tr style="height:7px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="8" rowspan="2" class="s0" style="font-size:1px"><img src="report.files/img3.png" width="173" height="79" alt=""></td><td colspan="7" class="s14">Acunetix Threat Level 1</td><td/>
+</tr>
+<tr style="height:57px">
+<td colspan="7" rowspan="2" class="s15">One or more low-severity type vulnerabilities have been discovered by the scanner.</td><td/>
+</tr>
+<tr style="height:2px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:22px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="15" class="s13">Alerts distribution</td><td/>
+</tr>
+<tr style="height:11px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td/><td colspan="5" class="s26">Total alerts found</td><td colspan="3" class="s25">1</td><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td rowspan="3" class="s0" style="font-size:1px"><img src="report.files/img4.png" width="17" height="17" alt=""></td><td/><td colspan="2" rowspan="4" class="s16">High</td><td colspan="3" rowspan="4" class="s24">0</td><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:11px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:1px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:3px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td rowspan="3" class="s0" style="font-size:1px"><img src="report.files/img5.png" width="17" height="17" alt=""></td><td/><td colspan="2" rowspan="4" class="s17">Medium</td><td colspan="3" rowspan="4" class="s24">0</td><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:11px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:1px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:3px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td rowspan="3" class="s0" style="font-size:1px"><img src="report.files/img6.png" width="17" height="17" alt=""></td><td/><td colspan="2" rowspan="4" class="s18">Low</td><td colspan="3" rowspan="4" class="s24">1</td><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:11px">
+<td/><td/><td/><td/><td colspan="3" class="s22" style="font-size:1px">&nbsp;</td><td/><td/><td/>
+</tr>
+<tr style="height:1px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:3px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:4px">
+<td/><td/><td rowspan="3" class="s0" style="font-size:1px"><img src="report.files/img7.png" width="17" height="17" alt=""></td><td/><td colspan="2" rowspan="4" class="s19">Informational</td><td colspan="3" rowspan="4" class="s24">0</td><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:11px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:1px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:3px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:26px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:26px">
+<td colspan="15" class="s27">Affected items</td><td/>
+</tr>
+<tr style="height:18px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="15" class="s28">Web Server</td><td/>
+</tr>
+<tr style="height:7px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="5" class="s30">Alert group</td><td colspan="10" class="s43">Clickjacking: X-Frame-Options header missing</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="5" class="s44">Severity</td><td colspan="10" class="s31">Low</td><td/>
+</tr>
+<tr style="height:150px">
+<td colspan="5" class="s44">Description</td><td colspan="10" class="s45">Clickjacking (User Interface redress attack, UI redress attack, UI redressing) is a malicious technique of tricking a Web user into clicking on something different from what the user perceives they are clicking on, thus potentially revealing confidential information or taking control of their computer while clicking on seemingly innocuous web pages. <br><br>The server didn't return an X-Frame-Options header which means that this website could be at risk of a clickjacking attack. The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page inside a frame or iframe. Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.</td><td/>
+</tr>
+<tr style="height:32px">
+<td colspan="5" class="s44">Recommendations</td><td colspan="10" class="s46">Configure your web server to include an X-Frame-Options header. Consult Web references for more information about the possible values for this header.</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="15" class="s47">Alert variants</td><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="5" class="s44">Details</td><td colspan="10" class="s35">No details are available.</td><td/>
+</tr>
+<tr style="height:88px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="14" class="s36">Acunetix Website Audit</td><td class="s3">2</td><td/>
+</tr>
+</table>
+<a name="PageN3"></a>
+<table width="720" border="0" cellspacing="0" cellpadding="0" class="page_break">
+<tr style="height: 1px"><td width="4"/><td width="11"/><td width="16"/><td width="7"/><td width="87"/><td width="8"/><td width="19"/><td width="21"/><td width="25"/><td width="11"/><td width="156"/><td width="22"/><td width="72"/><td width="185"/><td width="76"/><td width="2"/></tr>
+<tr style="height:37px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:106px">
+<td colspan="15" class="s37">GET / HTTP/1.1<br>Host: XXXXSSSSS.com<br>Connection: Keep-alive<br>Accept-Encoding: gzip,deflate<br>User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21<br>Accept: */*</td><td/>
+</tr>
+<tr style="height:892px">
+<td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+</tr>
+<tr style="height:18px">
+<td colspan="14" class="s36">Acunetix Website Audit</td><td class="s3">3</td><td/>
+</tr>
+</table>
+</body></html>
+
